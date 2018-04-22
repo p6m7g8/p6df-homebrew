@@ -3,7 +3,7 @@ p6df::modules::homebrew::deps()    {
 	ModuleDeps=()
 }
 
-p6df::modules::homebrew::external() { 
+p6df::modules::homebrew::external::brew() { 
 }
 
 p6df::modules::homebreg::init() {
