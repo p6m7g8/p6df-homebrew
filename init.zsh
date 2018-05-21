@@ -6,9 +6,8 @@ p6df::modules::homebrew::deps()    {
 p6df::modules::homebrew::external::brew() { 
 }
 
-p6df::modules::homebreg::init() {
+p6df::modules::homebrew::init() {
 }
-
 
 ## XXX: broken
 remove_casks() {
