@@ -6,10 +6,15 @@ p6df::modules::homebrew::deps()    {
 p6df::modules::homebrew::external::brew() { 
 }
 
+p6df::modules::homebrew::home::symlink() {
+
+  # XXX: none
+}
+
 p6df::modules::homebrew::init() {
 }
 
-## XXX: broken
+## XXX: brokedn
 remove_casks() {
 
     local formuli=$(grep ^cask bin/Brewfile | awk '{print $2}' | sed -e "s,',,g")
