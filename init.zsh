@@ -9,6 +9,7 @@ p6df::modules::homebrew::external::brew() {
 p6df::modules::homebrew::home::symlink() {
 
   # XXX: none
+  true;
 }
 
 p6df::modules::homebrew::init() {
