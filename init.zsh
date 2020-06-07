@@ -1,8 +1,22 @@
+######################################################################
+#<
+#
+# Function: p6df::modules::homebrew::version()
+#
+#>
+######################################################################
 p6df::modules::homebrew::version() { echo "0.0.1" }
 
 # Warning: Using vim because no editor was set in the environment.
 # This may change in the future, so we recommend setting EDITOR,
 # or HOMEBREW_EDITOR to your preferred text editor.
+######################################################################
+#<
+#
+# Function: p6df::modules::homebrew::init()
+#
+#>
+######################################################################
 p6df::modules::homebrew::init() {
 
   export HOMEBREW_EDITOR=vim
@@ -12,12 +26,26 @@ p6df::modules::homebrew::init() {
   alias p6_hbbr=p6df::modules::homebrew::brew::remove
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::homebrew::remove()
+#
+#>
+######################################################################
 p6df::modules::homebrew::remove() {
 
   p6df::modules::homebrew::casks::remove
   p6df::modules::homebrew::brews::remove
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::homebrew::casks::remove()
+#
+#>
+######################################################################
 p6df::modules::homebrew::casks::remove() {
 
   local formuli=$(brew cask list)
@@ -28,6 +56,13 @@ p6df::modules::homebrew::casks::remove() {
   done
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::homebrew::brews::remove()
+#
+#>
+######################################################################
 p6df::modules::homebrew::brews::remove() {
 
   local formuli=$(brew list)
