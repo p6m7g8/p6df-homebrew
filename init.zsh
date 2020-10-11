@@ -7,6 +7,20 @@
 ######################################################################
 p6df::modules::homebrew::version() { echo "0.0.1" }
 
+
+######################################################################
+#<
+#
+# Function: p6df::modules::homebrew::deps()
+#
+#>
+######################################################################
+p6df::modules::homebrew::deps() {
+  ModuleDeps=(
+    p6m7g8/p6common
+  )
+}
+
 # Warning: Using vim because no editor was set in the environment.
 # This may change in the future, so we recommend setting EDITOR,
 # or HOMEBREW_EDITOR to your preferred text editor.
