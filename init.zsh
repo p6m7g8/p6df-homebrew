@@ -54,11 +54,11 @@ p6df::modules::homebrew::remove() {
 ######################################################################
 p6df::modules::homebrew::casks::remove() {
 
-  local formuli=$(brew cask list)
+  local formuli=$(brew list --cask)
 
   local formula
   for formula in $(echo $formuli); do
-    brew cask uninstall $formula
+    brew uninstall --cask $formula
   done
 }
 
@@ -71,10 +71,10 @@ p6df::modules::homebrew::casks::remove() {
 ######################################################################
 p6df::modules::homebrew::brews::remove() {
 
-  local formuli=$(brew list)
+  local formuli=$(brew list --formula)
 
   local formula
   for formula in $(echo $formuli); do
-    brew uninstall --ignore-dependencies $formula
+    brew uninstall --ignore-dependencies --force $formula
   done
 }
