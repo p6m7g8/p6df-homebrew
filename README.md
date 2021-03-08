@@ -38,9 +38,11 @@
 
 - [Change Log](CHANGELOG.md)
 
-### Usage
+## Usage
 
-#### init.zsh:
+### p6df-homebrew:
+
+#### p6df-homebrew/init.zsh:
 
 - p6df::modules::homebrew::brews::remove()
 - p6df::modules::homebrew::casks::remove()
