@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/p6m7g8/p6df-homebrew/compare/v2.1.0...v2.1.1) (2021-04-04)
+
+
+* **link:** remove rendundant symlinks; echo for now ([#14](https://github.com/p6m7g8/p6df-homebrew/issues/14)) ([39b0f87](https://github.com/p6m7g8/p6df-homebrew/commit/39b0f876ae5dbd3d7d93e95755ab04bb40d3b41c))
+* **README:** updates generator ([#13](https://github.com/p6m7g8/p6df-homebrew/issues/13)) ([80262f2](https://github.com/p6m7g8/p6df-homebrew/commit/80262f22b3d71248d63807d6688d73e9c0a6ddd1))
+* Coc -> .github ([46ac1d2](https://github.com/p6m7g8/p6df-homebrew/commit/46ac1d2e6e02762f9cf1408d63fb913cbe90f003))
+
 ## [2.1.0](https://github.com/p6m7g8/p6df-homebrew/compare/v2.0.0...v2.1.0) (2020-12-06)
 
 
